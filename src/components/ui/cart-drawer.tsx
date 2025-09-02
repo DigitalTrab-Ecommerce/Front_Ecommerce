@@ -1,6 +1,7 @@
 import { X, Minus, Plus, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/contexts/CartContext";
+import { useNavigate } from "react-router-dom";
 
 interface CartDrawerProps {
   isOpen: boolean;
@@ -9,6 +10,12 @@ interface CartDrawerProps {
 
 const CartDrawer = ({ isOpen, onClose }: CartDrawerProps) => {
   const { items, total, itemCount, updateQuantity, removeFromCart, clearCart } = useCart();
+  const navigate = useNavigate();
+
+  const handleCheckout = () => {
+    onClose();
+    navigate("/checkout");
+  };
 
   if (!isOpen) return null;
 
@@ -130,6 +137,7 @@ const CartDrawer = ({ isOpen, onClose }: CartDrawerProps) => {
                   variant="elegant"
                   className="w-full"
                   size="lg"
+                  onClick={handleCheckout}
                 >
                   Finalizar Compra
                 </Button>

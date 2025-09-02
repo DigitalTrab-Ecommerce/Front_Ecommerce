@@ -7,13 +7,13 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
-          <div>
-            <h3 className="text-2xl font-bold mb-4 bg-gradient-gold bg-clip-text text-transparent">
-              ÉLITE
-            </h3>
-            <p className="text-primary-foreground/80 mb-6">
-              Moda exclusiva para pessoas que valorizam qualidade e elegância.
-            </p>
+            <div>
+              <h3 className="text-2xl font-bold mb-4 bg-gradient-gold bg-clip-text text-transparent">
+                NIKE STORE
+              </h3>
+              <p className="text-primary-foreground/80 mb-6">
+                Os melhores produtos Nike para elevar seu estilo e performance esportiva.
+              </p>
             <div className="flex space-x-4">
               <Instagram className="h-5 w-5 hover:text-accent cursor-pointer transition-colors" />
               <Facebook className="h-5 w-5 hover:text-accent cursor-pointer transition-colors" />
@@ -26,11 +26,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Categorias</h4>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li><a href="#" className="hover:text-accent transition-colors">Feminino</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Masculino</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Acessórios</a></li>
               <li><a href="#" className="hover:text-accent transition-colors">Calçados</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Sale</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors">Masculino</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors">Feminino</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors">Esportes</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors">Promoções</a></li>
             </ul>
           </div>
 
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center text-primary-foreground/60">
-          <p>&copy; 2024 ÉLITE. Todos os direitos reservados.</p>
+          <p>&copy; 2024 Nike Store. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

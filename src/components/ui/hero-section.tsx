@@ -15,19 +15,19 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-2xl">
-          <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
+        <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="bg-gradient-elegant bg-clip-text text-transparent">
-              Moda
+              Nike
             </span>
             <br />
             <span className="bg-gradient-gold bg-clip-text text-transparent">
-              Exclusiva
+              Store
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-            Descubra as últimas tendências em moda premium. 
-            Peças únicas para pessoas únicas.
+            Descubra os melhores produtos Nike. 
+            Performance e estilo em cada peça.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

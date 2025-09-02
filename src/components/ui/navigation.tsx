@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { ShoppingBag, Search, User, Heart } from "lucide-react";
+import { ShoppingBag, Search, User, Heart, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/contexts/CartContext";
 import CartDrawer from "@/components/ui/cart-drawer";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -15,9 +16,11 @@ const Navigation = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold bg-gradient-gold bg-clip-text text-transparent">
-                NIKE STORE
-              </h1>
+              <Link to="/">
+                <h1 className="text-2xl font-bold bg-gradient-gold bg-clip-text text-transparent">
+                  NIKE STORE
+                </h1>
+              </Link>
             </div>
 
             {/* Navigation Links */}
@@ -37,6 +40,10 @@ const Navigation = () => {
               <a href="#" className="text-foreground hover:text-accent transition-colors">
                 Promoções
               </a>
+              <Link to="/admin" className="text-foreground hover:text-accent transition-colors flex items-center gap-1">
+                <Settings className="h-4 w-4" />
+                Admin
+              </Link>
             </div>
 
             {/* Right Actions */}
